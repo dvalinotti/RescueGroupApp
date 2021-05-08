@@ -60,7 +60,7 @@ export default function AnimalScreen({ navigation, route }) {
         }
       })
       .catch(err => console.log(err));
-  }
+  };
 
   useEffect(() => {
     if (id && id !== '' && animalImage === undefined) {
