@@ -12,6 +12,7 @@ target 'RescueGroup' do
     :hermes_enabled => false
   )
 
+
   target 'RescueGroupTests' do
     inherit! :complete
     # Pods for testing
@@ -21,9 +22,24 @@ target 'RescueGroup' do
   #
   # Note that if you have use_frameworks! enabled, Flipper will not work and
   # you should disable the next line.
-  use_flipper!()
+  use_flipper!({ 'Flipper' => '0.94.1' })
 
   post_install do |installer|
+    # Fix "no rule to process file..." error
+    installer.pods_project.build_configurations.each do |config|
+      config.build_settings["EXCLUDED_ARCHS[sdk=iphonesimulator*]"] = "arm64"
+    end
+
+    # set the Deployment target for all your Pods references
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+        # adjusting it only if it's not greater than 8.0
+        if Gem::Version.new('9.0') > Gem::Version.new(config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'])
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '9.0'
+        end
+      end
+    end
+
     react_native_post_install(installer)
   end
 end

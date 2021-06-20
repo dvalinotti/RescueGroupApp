@@ -13,7 +13,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import Card from './Card';
 import BaseButton from './BaseButton';
 import colors from '../styles/colors';
-import { RG_API_KEY } from 'react-native-dotenv';
+import { RG_API_KEY } from '@env';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const headers = {
@@ -88,14 +88,8 @@ const createStyleSheet = () =>
 
 function ListItem(props) {
   const { styles, onPressItem } = props;
-  const {
-    name,
-    ageGroup,
-    breedPrimary,
-    sex,
-    pictureThumbnailUrl,
-    distance,
-  } = props.data.attributes;
+  const { name, ageGroup, breedPrimary, sex, pictureThumbnailUrl, distance } =
+    props.data.attributes;
 
   return (
     <TouchableOpacity activeOpacity={0.8} onPress={onPressItem}>

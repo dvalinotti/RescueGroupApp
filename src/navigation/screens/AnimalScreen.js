@@ -10,7 +10,7 @@ import {
   Linking,
 } from 'react-native';
 import HTML from 'react-native-render-html';
-import { RG_API_KEY } from 'react-native-dotenv';
+import { RG_API_KEY } from '@env';
 import Card from '../../components/Card';
 import AnimalTitleCard from '../../components/AnimalTitleCard';
 import CollapsibleList from '../../components/CollapsibleList';

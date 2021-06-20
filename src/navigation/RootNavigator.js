@@ -11,7 +11,7 @@ import { StatusBar } from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/dist/Ionicons';
 import { DefaultTheme, DarkTheme } from '@react-navigation/native';
 import RootNavigatorData from './rootNavigatorData';
 import { colors } from '../styles';
@@ -28,11 +28,11 @@ const MyTheme = {
     ...DefaultTheme.colors,
     primary: 'rgb(255, 45, 85)',
     secondary: colors.secondary,
-    background: 'rgb(236, 236, 236)'
+    background: 'rgb(236, 236, 236)',
   },
 };
 
-const App = () => {
+export const RootNavigator = () => {
   const [theme, setTheme] = useState('light');
   return (
     <NavigationContainer theme={theme === 'dark' ? DarkTheme : MyTheme}>
@@ -43,7 +43,8 @@ const App = () => {
           tabBarIcon: ({ focused, color, size }) => {
             const iconName = getNavigationTabIcon(route.name, focused);
             // You can return any component that you like here!
-            return <Ionicons name={iconName} size={size} color={color} />;
+            console.log('iconName:', iconName);
+            return <Icon name="home" size={size} color={color} />;
           },
           tabBarActiveTintColor: colors.white,
           tabBarInactiveTintColor: colors.veryLightGray,
@@ -69,5 +70,3 @@ const App = () => {
     </NavigationContainer>
   );
 };
-
-export default App;

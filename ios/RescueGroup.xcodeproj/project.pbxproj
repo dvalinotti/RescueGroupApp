@@ -41,6 +41,22 @@
 		714F084CFD113D22C795A41A /* Pods-RescueGroup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RescueGroup.debug.xcconfig"; path = "Target Support Files/Pods-RescueGroup/Pods-RescueGroup.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RescueGroup/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87DE284ED4378D065D3DFB17 /* libPods-RescueGroup-RescueGroupTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RescueGroup-RescueGroupTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E58D194D267FA44B00F14C24 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		E58D194E267FA44B00F14C24 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		E58D194F267FA44B00F14C24 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		E58D1950267FA44B00F14C24 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		E58D1951267FA44B00F14C24 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		E58D1952267FA44B00F14C24 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		E58D1953267FA44B00F14C24 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		E58D1954267FA44B00F14C24 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		E58D1955267FA44B00F14C24 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		E58D1956267FA44B00F14C24 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		E58D1957267FA44B00F14C24 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		E58D1958267FA44B00F14C24 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		E58D1959267FA44B00F14C24 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		E58D195A267FA44B00F14C24 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		E58D195B267FA44B00F14C24 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		E58D195C267FA44B00F14C24 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		E8F5ECE15336CEDFA3AA2349 /* Pods-RescueGroup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RescueGroup.release.xcconfig"; path = "Target Support Files/Pods-RescueGroup/Pods-RescueGroup.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EF77E9F89E7A4879D7BD702B /* libPods-RescueGroup.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RescueGroup.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,9 +99,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0232E1CC41D24F1194917783 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* RescueGroup */ = {
 			isa = PBXGroup;
 			children = (
+				E58D197D267FA52C00F14C24 /* Fonts */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -122,6 +147,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				C9C979376AF08C510CE29101 /* Pods */,
+				0232E1CC41D24F1194917783 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,6 +172,29 @@
 				1B44345E1F6467A6767257ED /* Pods-RescueGroup-RescueGroupTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E58D197D267FA52C00F14C24 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E58D194D267FA44B00F14C24 /* Fontisto.ttf */,
+				E58D194E267FA44B00F14C24 /* Octicons.ttf */,
+				E58D194F267FA44B00F14C24 /* Feather.ttf */,
+				E58D1950267FA44B00F14C24 /* Entypo.ttf */,
+				E58D1951267FA44B00F14C24 /* FontAwesome5_Brands.ttf */,
+				E58D1952267FA44B00F14C24 /* MaterialCommunityIcons.ttf */,
+				E58D1953267FA44B00F14C24 /* AntDesign.ttf */,
+				E58D1954267FA44B00F14C24 /* Foundation.ttf */,
+				E58D1955267FA44B00F14C24 /* Ionicons.ttf */,
+				E58D1956267FA44B00F14C24 /* FontAwesome5_Solid.ttf */,
+				E58D1957267FA44B00F14C24 /* FontAwesome5_Regular.ttf */,
+				E58D1958267FA44B00F14C24 /* FontAwesome.ttf */,
+				E58D1959267FA44B00F14C24 /* Zocial.ttf */,
+				E58D195A267FA44B00F14C24 /* EvilIcons.ttf */,
+				E58D195B267FA44B00F14C24 /* SimpleLineIcons.ttf */,
+				E58D195C267FA44B00F14C24 /* MaterialIcons.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +249,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -564,7 +613,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -629,7 +678,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
