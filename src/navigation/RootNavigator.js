@@ -11,7 +11,7 @@ import { StatusBar } from 'react-native';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-vector-icons/dist/Ionicons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import { DefaultTheme, DarkTheme } from '@react-navigation/native';
 import RootNavigatorData from './rootNavigatorData';
 import { colors } from '../styles';
@@ -44,7 +44,7 @@ export const RootNavigator = () => {
             const iconName = getNavigationTabIcon(route.name, focused);
             // You can return any component that you like here!
             console.log('iconName:', iconName);
-            return <Icon name="home" size={size} color={color} />;
+            return <Ionicons name={iconName} size={size} color={color} />;
           },
           tabBarActiveTintColor: colors.white,
           tabBarInactiveTintColor: colors.veryLightGray,
