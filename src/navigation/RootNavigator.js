@@ -43,7 +43,6 @@ export const RootNavigator = () => {
           tabBarIcon: ({ focused, color, size }) => {
             const iconName = getNavigationTabIcon(route.name, focused);
             // You can return any component that you like here!
-            console.log('iconName:', iconName);
             return <Ionicons name={iconName} size={size} color={color} />;
           },
           tabBarActiveTintColor: colors.white,

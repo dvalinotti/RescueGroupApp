@@ -9,11 +9,6 @@ export default function SearchScreen(props) {
   const [species, setSpecies] = useState('any');
   const [ageGroup, setAgeGroup] = useState('any');
 
-  console.log({
-    distance,
-    species,
-  });
-
   return (
     <View style={styles.page}>
       <View style={styles.container}>
