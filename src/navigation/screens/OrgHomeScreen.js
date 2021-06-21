@@ -4,7 +4,7 @@ import { StyleSheet, View, Text } from 'react-native';
 export default function OrgHomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
-      <Text>Org Home Screen</Text>
+      <Text style={styles.title}>Coming Soon!</Text>
     </View>
   );
 }
@@ -44,6 +44,8 @@ const styles = StyleSheet.create({
   },
   title: {
     marginTop: 30,
+    fontSize: 24,
+    textAlign: 'center',
   },
   price: {
     marginBottom: 5,
